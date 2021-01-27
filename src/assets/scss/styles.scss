@@ -1,0 +1,123 @@
+@import 'variables.scss';
+
+h1, h2, h3, h4, h5, p, a, button, input {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+.blockBar {
+    padding: 2rem 0;
+  }
+  
+  .titlesOfBlocks {
+    margin-top: 3rem;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  
+  #discountTitle {
+    position: relative;
+    font-size: 27px;
+    color: #242626;
+    font-weight: 500;
+    @include   for-tablet-portrait-up {
+     font-size: 40px;
+    }
+  }
+  
+  .offersMain {
+    margin-top: 3rem;
+  }
+  
+  .wrpClotheBar {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-rows: repeat(2, 390px);
+      justify-items: center;
+      img {
+        margin-top: 1rem;
+      }
+  }
+  
+  .product_bar_item {
+    background: #ffff;
+    border-radius: 5px;
+  }
+  
+  .clotheBarImg {
+    border-radius: 6px;
+    max-width: 240px;
+    max-height: 220px;
+  }
+  
+  .textBar {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  
+.lighten {
+    background-color:#dfe1e6;
+    padding: 0 3rem;
+    margin-top: 1rem;
+    color: #000;
+}
+
+
+.textBar {
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
+.priceItem {
+    color: #7d231d;
+}
+
+.lightenSmall {
+    background-color: #404040;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+
+.salePic {
+    width: 100px;
+  }
+
+a {
+  color: black;
+}
+
+.titleMain {
+  color: #363636;
+  font-weight: 500;
+}
+
+.mainWrapper{
+  @include for-medium-up {
+    padding-top: 8rem;
+  }
+  @include for-desktop-up {
+    padding-top: 5rem;
+  }
+}
+
+.ofertabtn {
+  background: linear-gradient(to right, rgb(253, 131, 82) 100%, rgb(240, 193, 140) 100%);
+  box-shadow: 3px 3px 0 #f5ea77;
+  color: #fff;
+  font-size: 600;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, rgb(255, 230, 0) 100%,rgb(240, 193, 140) 100%);
+  }
+}
+
+.hrMain {
+  max-width: 600px;
+}

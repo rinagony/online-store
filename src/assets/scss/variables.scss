@@ -1,0 +1,21 @@
+@mixin for-extra-small-up {
+    @media (min-width: 320px) { @content; }
+}
+@mixin for-small-up {
+    @media (min-width: 396px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+    @media (min-width: 576px) { @content; }
+}
+  
+@mixin for-medium-up {
+    @media (min-width: 768px) { @content; }
+}
+  
+@mixin for-desktop-up {
+    @media (min-width: 992px) { @content; }
+}
+  
+@mixin for-large-desktops-up {
+    @media (min-width: 1140px) { @content; }
+}
